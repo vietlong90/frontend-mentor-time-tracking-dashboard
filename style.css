@@ -125,8 +125,7 @@ body {
 .card {
     padding-top: 45px;
     background-repeat: no-repeat;
-    background-position-y: -12px;
-    background-position-x: right 16px;
+    background-position: right 16px top -12px;
 }
 .card.work {
     background-color: var(--color-orange-300);
@@ -221,7 +220,6 @@ body {
     }
     .card {
         padding-top: 33px;
-        background-position-x: right 16px;
     }
     .card .content {
         padding: 24px;
@@ -264,9 +262,6 @@ body {
     }
     .card-person .menu button {
         width: auto;
-    }
-    .card {
-        background-position-x: right 16px;
     }
     .card {
         padding-top: 38px;
