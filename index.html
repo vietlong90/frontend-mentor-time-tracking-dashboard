@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,14 @@
             <div class="header">
                 <img class="avatar" src="./images/image-jeremy.png" alt="jeremy">
                 <div class="info">
-                    <p>Report for</p>
-                    <span>Jeremy Robson</span>
+                    <p class="text-preset-6">Report for</p>
+                    <span class="text-preset-2">Jeremy Robson</span>
                 </div>
             </div>
             <div class="menu">
-                <button class="menu-item" data-timeframe="daily">Daily</button>
-                <button class="menu-item active" data-timeframe="weekly">Weekly</button>
-                <button class="menu-item" data-timeframe="monthly">Monthly</button>
+                <button class="menu-item text-preset-5" data-timeframe="daily">Daily</button>
+                <button class="menu-item text-preset-5" data-timeframe="weekly">Weekly</button>
+                <button class="menu-item text-preset-5" data-timeframe="monthly">Monthly</button>
             </div>
         </div>
         <div class="card work">
@@ -35,16 +35,71 @@
                     <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
                 </div>
                 <div class="content__body">
-                    <p>32hrs</p>
-                    <p>Last Week - 36hrs</p>
+                    <p id="time_work_now" class="current text-preset-1">-</p>
+                    <p id="time_work_last" class="last text-preset-6">Last Week - -</p>
                 </div>
             </div>
         </div>
-        <div class="card play"></div>
-        <div class="card study"></div>
-        <div class="card exercise"></div>
-        <div class="card social"></div>
-        <div class="card self-care"></div>
+        <div class="card play">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title text-preset-5">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p id="time_play_now" class="current text-preset-1">-</p>
+                    <p id="time_play_last" class="last text-preset-6">Last Week - -</p>
+                </div>
+            </div>
+        </div>
+        <div class="card study">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p id="time_study_now" class="current text-preset-1">-</p>
+                    <p id="time_study_last" class="last text-preset-6">Last Week - -</p>
+                </div>
+            </div>
+        </div>
+        <div class="card exercise">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p id="time_exercise_now" class="current text-preset-1">-</p>
+                    <p id="time_exercise_last" class="last text-preset-6">Last Week - -</p>
+                </div>
+            </div>
+        </div>
+        <div class="card social">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p id="time_social_now" class="current text-preset-1">-</p>
+                    <p id="time_social_last" class="last text-preset-6">Last Week - -</p>
+                </div>
+            </div>
+        </div>
+        <div class="card self-care">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p id="time_self-care_now" class="current text-preset-1">-</p>
+                    <p id="time_self-care_last" class="last text-preset-6">Last Week - -</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
