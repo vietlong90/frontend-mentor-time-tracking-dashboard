@@ -75,6 +75,10 @@ body {
 .card-person {
     grid-column: 1/1;
     grid-row: 1/3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 176px;
 }
 
 .card, .card-person {
@@ -154,7 +158,7 @@ body {
 }
 
 .card .content {
-    background: var(--color-navy-800);
+    background: var(--color-navy-900);
     border-radius: 15px;
     padding: 32px;
     height: 100%;

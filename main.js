@@ -131,7 +131,8 @@ window.addEventListener('load', () => {
             let current_element = document.getElementById(`time_${data.id}_now`)
             let last_element = document.getElementById(`time_${data.id}_last`)
             current_element.innerHTML = current + 'hrs'
-            last_element.innerHTML = last_tracking + 'hrs'
+            let label_last = getLastTimeLabel(active_menu)
+            last_element.innerHTML = label_last + ' - ' + last_tracking + 'hrs'
         }
         
         button.addEventListener('click', e => {
@@ -149,9 +150,26 @@ window.addEventListener('load', () => {
                 let current_element = document.getElementById(`time_${data.id}_now`)
                 let last_element = document.getElementById(`time_${data.id}_last`)
                 current_element.innerHTML = current + 'hrs'
-                last_element.innerHTML = last_tracking + 'hrs'
+                let label_last = getLastTimeLabel(timeframe)
+                last_element.innerHTML = label_last + ' - ' + last_tracking + 'hrs'
             }
 
         })
     }
 })
+
+function getLastTimeLabel(timeframe) {
+    let label_last = '';
+    switch (timeframe) {
+        case 'daily':
+            label_last = 'Yesterday';
+            break;
+        case 'weekly':
+            label_last = 'Last Week';
+            break;
+        case 'monthly':
+            label_last = 'Last Month';
+            break;
+    }
+    return label_last;
+}
