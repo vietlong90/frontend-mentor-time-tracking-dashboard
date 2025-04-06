@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <div class="container">
+        <div class="card-person">
+            <div class="header">
+                <img class="avatar" src="./images/image-jeremy.png" alt="jeremy">
+                <div class="info">
+                    <p>Report for</p>
+                    <span>Jeremy Robson</span>
+                </div>
+            </div>
+            <div class="menu">
+                <button class="menu-item" data-timeframe="daily">Daily</button>
+                <button class="menu-item active" data-timeframe="weekly">Weekly</button>
+                <button class="menu-item" data-timeframe="monthly">Monthly</button>
+            </div>
+        </div>
+        <div class="card work">
+            <div class="content">
+                <div class="content__header">
+                    <div class="title">Work</div>
+                    <div class="menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="content__body">
+                    <p>32hrs</p>
+                    <p>Last Week - 36hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="card play"></div>
+        <div class="card study"></div>
+        <div class="card exercise"></div>
+        <div class="card social"></div>
+        <div class="card self-care"></div>
+    </div>
+</body>
+</html>
